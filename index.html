@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MOTOR WORKS | BETTER BUILT</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".toggle a").click(function() {
+          $(".menu").toggleClass("active");
+        });
+      });
+    </script>
+
+    <style type="text/css">
+      /* Extra small devices (phones, 600px and down) */
+      @media only screen and (max-width: 400px) {
+        .header-content h1 {
+          font-size: 25px;
+          margin-left: -7rem;
+        }
+
+        .header-content p {
+          margin-left: -7rem;
+        }
+
+        .header-content small {
+          margin-left: -7rem;
+        }
+
+        .btn {
+          font-size: 0.7rem;
+          margin-left: -4rem;
+          display: block;
+        }
+
+        .footer {
+          position: absolute;
+          bottom: 0%;
+          left: 2%;
+          font-size: 0.8rem;
+          color: #fff;
+          z-index: 150;
+        }
+
+        .footer span {
+          display: block;
+          margin-left: 0rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- -----------NAVBAR STARTS HERE------------ -->
+    <div class="toggle">
+      <a><i class="fa fa-bars"></i></a>
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- --------------NAVBAR ENDS HERE---------------------- -->
+
+    <!-- -----------------BACKGROUND STARTS HERE------------------- -->
+    <header class="v-header container">
+      <div class="fullscreen-video-wrap">
+        <video loop muted autoplay>
+          <source src="main.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <!-- <div> -->
+      <div class="header-content">
+        <h1>WELCOME TO MOTOR WORKS</h1>
+        <p>Because so much is riding on your tires.</p>
+        <small>Better built, Better packed</small>
+        <a href="about.html" class="btn btn-1">KNOW US</a>
+        <a href="contact.html" class="btn btn-2">CONTACT US</a>
+      </div>
+      <!-- </div> -->
+    </header>
+    <div class="footer card-footer">
+      Follow Us <a href="http://twitter.com" class="twitter">Twitter</a> |
+      <a href="http://facebook.com" class="facebook">Facebook</a> |
+      <a href="http://instagram.com" class="instagram">Instagram</a>
+      <span>CopyRight &copy;2019. All Rights Reserved.</span>
+    </div>
+    <!-- -----------------BACKGROUND ENDS HERE------------------- -->
+  </body>
+</html>
