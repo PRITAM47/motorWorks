@@ -7,6 +7,7 @@
     <title>MOTOR WORKS | BETTER BUILT</title>
 
     <link rel="stylesheet" href="css/style.css" />
+
     <link
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
@@ -32,19 +33,35 @@
           height: 100vh;
           overflow: hidden;
         }
-
+        /* 
         .fullscreen-video-wrap video {
           position: fixed;
           top: 50%;
           left: 50%;
-          /* max-width: 50%; */
+          max-width: 50%;
           max-height: 50%;
-          /* width: auto;
-          height: auto; */
+          min-width: 100%;
+          min-height: 100%;
+          object-fit: cover;
+          width: auto;
+          height: auto;
           z-index: -100;
           -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
+        } */
+
+        .fullscreen-video-wrap video {
+          min-width: 100%;
+          min-height: 100%;
+          position: static;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          object-fit: fill;
+          transform: translateX(0%) translateY(0%);
         }
+
         .header-content h1 {
           font-size: 25px;
           margin-left: -7rem;
@@ -98,8 +115,8 @@
 
     <!-- -----------------BACKGROUND STARTS HERE------------------- -->
     <header class="v-header container">
-      <div class="fullscreen-video-wrap">
-        <video loop muted autoplay>
+      <div class="fullscreen-video-wrap container-fluid">
+        <video loop muted autoplay class="my-video">
           <source src="main.mp4" type="video/mp4" />
         </video>
       </div>
